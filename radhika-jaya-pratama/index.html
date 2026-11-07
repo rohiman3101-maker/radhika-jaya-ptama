@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RADHIKA JAYA PRATAMA | Jasa Epoxy Lantai Profesional</title>
+<meta name="description" content="RADHIKA JAYA PRATAMA melayani jasa epoxy lantai profesional untuk pabrik, gudang, kantor, dan bangunan komersial.">
+<style>
+:root {
+    --dark: #101820;
+    --dark2: #192631;
+    --gold: #d8ad58;
+    --light: #f5f6f7;
+    --white: #ffffff;
+    --text: #333d45;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+}
+.container { width: min(1120px, 92%); margin: auto; }
+header {
+    background: var(--dark);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px #0002;
+}
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.logo {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration: none;
+}
+.logo small {
+    display: block;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 2px;
+}
+nav { display: flex; align-items: center; gap: 20px; }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+nav a:hover { color: var(--gold); }
+.menu-toggle {
+    display: none;
+    border: 0;
+    color: white;
+    background: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+.hero {
+    background: linear-gradient(120deg, #101820ee, #192631dd);
+    color: white;
+    padding: 110px 0;
+}
+.hero-content { max-width: 760px; }
+.eyebrow {
+    color: var(--gold);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.15; margin: 18px 0; }
+.hero p { max-width: 650px; color: #e0e4e7; margin-bottom: 28px; }
+.btn {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-gold { background: var(--gold); color: var(--dark); }
+.btn-dark { background: var(--dark); color: white; }
+section { padding: 75px 0; scroll-margin-top: 80px; }
+.section-title { text-align: center; margin-bottom: 38px; }
+.section-title span { color: #ad8131; font-weight: bold; letter-spacing: 2px; font-size: 12px; }
+.section-title h2 { color: var(--dark); font-size: 32px; margin-top: 8px; }
+.section-title p { max-width: 650px; margin: 8px auto 0; color: #69747d; }
+.about-grid, .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+.about-panel {
+    background: var(--dark);
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+.about-panel h3 { color: var(--gold); margin-bottom: 12px; }
+.feature-grid, .service-grid, .price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.feature, .service, .price-card {
+    padding: 25px;
+    background: white;
+    border: 1px solid #e7e9eb;
+    border-radius: 9px;
+}
+.feature h3, .service h3 { color: var(--dark); margin-bottom: 8px; }
+.feature .symbol { font-size: 28px; color: #b68b3b; }
+.services-section, .calculator-section, .contact-section { background: var(--light); }
+.price-card { text-align: center; }
+.price-card h3 { color: var(--dark); }
+.price-card strong { display: block; color: #a77924; font-size: 23px; margin: 12px 0; }
+.price-card p { font-size: 13px; color: #68737c; }
+.price-card button { margin-top: 16px; }
+.calculator-box, .booking-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 32px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 8px 30px #18263112;
+}
+.form-group { margin-bottom: 18px; }
+label { display: block; font-weight: bold; margin-bottom: 7px; color: var(--dark); }
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd2d7;
+    border-radius: 5px;
+    font: inherit;
+    background: white;
+}
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #d8ad5880;
+    border-color: var(--gold);
+}
+.calculator-box button, .booking-box button { width: 100%; }
+.calculator-result {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 8px;
+}
+.calculator-result h3 {
+    color: var(--gold);
+    font-size: clamp(26px, 5vw, 38px);
+    margin: 8px 0;
+}
+.calculator-result small { color: #d7dde1; display: block; margin-top: 10px; }
+.result-detail { color: #e2e5e8; font-size: 14px; }
+.booking-box { max-width: 800px; }
+.two-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.contact-section { background: var(--dark); color: white; }
+.contact-section .section-title h2 { color: white; }
+.contact-section .section-title p { color: #d3d9dd; }
+.contact-info h3 { color: var(--gold); margin-bottom: 12px; }
+.contact-info p { margin-bottom: 12px; overflow-wrap: anywhere; }
+footer {
+    background: #0b1117;
+    color: white;
+    text-align: center;
+    padding: 23px 10px;
+    font-size: 13px;
+}
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    background: #20b95a;
+    color: white;
+    text-decoration: none;
+    padding: 13px 19px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px #0003;
+}
+@media (max-width: 800px) {
+    .menu-toggle { display: block; }
+    nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: var(--dark);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav.active { display: flex; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .feature-grid, .service-grid, .price-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+    .hero { padding: 75px 0; }
+    section { padding: 55px 0; }
+    .feature-grid, .service-grid, .price-grid, .two-fields { grid-template-columns: 1fr; }
+    .calculator-box, .booking-box { padding: 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+        <a class="logo" href="#beranda">
+            RADHIKA JAYA PRATAMA
+            <small>PROFESSIONAL FLOORING SOLUTIONS</small>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+        <nav id="navLinks">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#harga">Harga</a>
+            <a href="#kalkulator">Kalkulator</a>
+            <a href="#pemesanan">Pemesanan</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="beranda">
+    <div class="container hero-content">
+        <div class="eyebrow">JASA EPOXY LANTAI PROFESIONAL</div>
+        <h1>Solusi Lantai Epoxy Berkualitas untuk Kebutuhan Anda</h1>
+        <p>
+            RADHIKA JAYA PRATAMA melayani pekerjaan epoxy lantai
+            untuk pabrik, gudang, perkantoran, dan berbagai bangunan
+            komersial dengan memperhatikan kualitas serta kebutuhan proyek.
+        </p>
+        <a class="btn btn-gold" href="#pemesanan">KONSULTASI PROYEK</a>
+        <a class="btn btn-dark" href="#layanan">LIHAT LAYANAN</a>
+    </div>
+</section>
+
+<section id="tentang">
+    <div class="container">
+        <div class="section-title">
+            <span>TENTANG KAMI</span>
+            <h2>RADHIKA JAYA PRATAMA</h2>
+            <p>Mitra pekerjaan epoxy lantai untuk kebutuhan industri dan komersial.</p>
+        </div>
+        <div class="about-grid">
+            <div>
+                <h3>Jasa Epoxy Lantai Profesional</h3>
+                <p>
+                    Kami menyediakan layanan pengerjaan epoxy lantai
+                    dengan pilihan ketebalan dan sistem pekerjaan yang
+                    dapat disesuaikan dengan kebutuhan lokasi proyek.
+                </p>
+                <br>
+                <p>
+                    Kami mengutamakan persiapan permukaan, ketepatan
+                    proses aplikasi, dan komunikasi yang baik dengan pelanggan.
+                </p>
+            </div>
+            <div class="about-panel">
+                <h3>Komitmen Pelayanan</h3>
+                <p>
+                    Memberikan solusi lantai yang rapi, kuat, mudah
+                    dibersihkan, dan sesuai kebutuhan penggunaan area.
+                    Setiap proyek dikonsultasikan terlebih dahulu untuk
+                    menentukan sistem pengerjaan yang tepat.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section" id="layanan">
+    <div class="container">
+        <div class="section-title">
+            <span>LAYANAN KAMI</span>
+            <h2>Jasa Pengerjaan Epoxy Lantai</h2>
+            <p>Solusi untuk berbagai kebutuhan lantai bangunan.</p>
+        </div>
+        <div class="service-grid">
+            <article class="service">
+                <h3>Epoxy Pabrik</h3>
+                <p>Pengerjaan lantai untuk area produksi dan fasilitas industri.</p>
+            </article>
+            <article class="service">
+                <h3>Epoxy Gudang</h3>
+                <p>Pelapisan lantai gudang dan area penyimpanan barang.</p>
+            </article>
+            <article class="service">
+                <h3>Epoxy Perkantoran</h3>
+                <p>Solusi lantai untuk kantor dan bangunan komersial.</p>
+            </article>
+            <article class="service">
+                <h3>Epoxy Self Leveling</h3>
+                <p>Sistem pelapisan untuk menghasilkan permukaan lantai yang rata.</p>
+            </article>
+            <article class="service">
+                <h3>Persiapan Permukaan</h3>
+                <p>Persiapan permukaan lantai sebelum proses aplikasi epoxy.</p>
+            </article>
+            <article class="service">
+                <h3>Konsultasi Proyek</h3>
+                <p>Konsultasi pilihan sistem dan ketebalan sesuai kebutuhan area.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="harga">
+    <div class="container">
+        <div class="section-title">
+            <span>DAFTAR HARGA</span>
+            <h2>Harga Epoxy Lantai</h2>
+            <p>Harga estimasi per meter persegi. Minimum pemesanan 100 m².</p>
+        </div>
+        <div class="price-grid">
+            <article class="price-card">
+                <h3>350 Micron</h3>
+                <strong>Rp95.000</strong>
+                <p>Per meter persegi</p>
+                <button class="btn btn-dark" data-ketebalan="350">Pesan</button>
+            </article>
+            <article class="price-card">
+                <h3>500 Micron</h3>
+                <strong>Rp130.000</strong>
+                <p>Per meter persegi</p>
+                <button class="btn btn-dark" data-ketebalan="500">Pesan</button>
+            </article>
+            <article class="price-card">
+                <h3>1000 Micron</h3>
+                <strong>Rp160.000</strong>
+                <p>Per meter persegi</p>
+                <button class="btn btn-dark" data-ketebalan="1000">Pesan</button>
+            </article>
+            <article class="price-card">
+                <h3>1500 Micron</h3>
+                <strong>Rp180.000</strong>
+                <p>Per meter persegi</p>
+                <button class="btn btn-dark" data-ketebalan="1500">Pesan</button>
+            </article>
+            <article class="price-card">
+                <h3>2000 Micron</h3>
+                <strong>Rp200.000</strong>
+                <p>Per meter persegi</p>
+                <button class="btn btn-dark" data-ketebalan="2000">Pesan</button>
+            </article>
+            <article class="price-card">
+                <h3>Self Leveling</h3>
+                <strong>Rp145.000</strong>
+                <p>Per meter persegi, estimasi sistem ±1 mm</p>
+                <button class="btn btn-dark" data-ketebalan="self-leveling">Pesan</button>
+            </article>
+        </div>
+        <p style="text-align:center;margin-top:25px;font-size:13px;">
+            Harga dapat berubah sesuai kondisi lantai, kebutuhan pekerjaan,
+            luas proyek, dan lokasi. Biaya transportasi luar Jawa Tengah
+            dapat diperhitungkan terpisah.
+        </p>
+    </div>
+</section>
+
+<section class="calculator-section" id="kalkulator">
+    <div class="container">
+        <div class="section-title">
+            <span>HITUNG BIAYA</span>
+            <h2>Kalkulator Harga Epoxy Lantai</h2>
+            <p>Masukkan luas area dan pilih ketebalan untuk menghitung estimasi biaya.</p>
+        </div>
+
+        <div class="calculator-box">
+            <div class="form-group">
+                <label for="luasArea">Luas Area (m²)</label>
+                <input type="number" id="luasArea" min="0" step="0.01"
+                       placeholder="Contoh: 250" value="100">
+            </div>
+
+            <div class="form-group">
+                <label for="ketebalanEpoxy">Ketebalan Epoxy</label>
+                <select id="ketebalanEpoxy">
+                    <option value="350">350 Micron</option>
+                    <option value="500">500 Micron</option>
+                    <option value="1000" selected>1000 Micron</option>
+                    <option value="1500">1500 Micron</option>
+                    <option value="2000">2000 Micron</option>
+                    <option value="self-leveling">Self Leveling ± 1 mm</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-gold" id="hitungHarga">
+                HITUNG ESTIMASI
+            </button>
+
+            <div class="calculator-result" aria-live="polite">
+                <p>Estimasi Total Biaya</p>
+                <h3 id="hasilHarga">Rp16.000.000</h3>
+                <p class="result-detail" id="detailHarga">
+                    100 m² × Rp160.000 per m²
+                </p>
+                <small id="catatanHarga">
+                    Harga merupakan estimasi awal.
+                </small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pemesanan">
+    <div class="container">
+        <div class="section-title">
+            <span>HUBUNGI KAMI</span>
+            <h2>Formulir Pemesanan Proyek</h2>
+            <p>Isi informasi proyek. Data akan dikirim melalui WhatsApp.</p>
+        </div>
+
+        <form class="booking-box" id="formPemesanan">
+            <div class="two-fields">
+                <div class="form-group">
+                    <label for="namaPelanggan">Nama Lengkap</label>
+                    <input id="namaPelanggan" type="text" required placeholder="Nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="nomorPelanggan">Nomor HP</label>
+                    <input id="nomorPelanggan" type="tel" required placeholder="Nomor WhatsApp">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="lokasiProyek">Lokasi Proyek</label>
+                <input id="lokasiProyek" type="text" required placeholder="Alamat proyek">
+            </div>
+
+            <div class="two-fields">
+                <div class="form-group">
+                    <label for="luasPemesanan">Luas Area (m²)</label>
+                    <input id="luasPemesanan" type="number" min="0.01" step="0.01" required placeholder="Contoh: 250">
+                </div>
+                <div class="form-group">
+                    <label for="ketebalanPemesanan">Ketebalan Epoxy</label>
+                    <select id="ketebalanPemesanan" required>
+                        <option value="350">350 Micron</option>
+                        <option value="500">500 Micron</option>
+                        <option value="1000" selected>1000 Micron</option>
+                        <option value="1500">1500 Micron</option>
+                        <option value="2000">2000 Micron</option>
+                        <option value="self-leveling">Self Leveling</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="jenisPekerjaan">Jenis Pekerjaan</label>
+                <select id="jenisPekerjaan">
+                    <option value="Epoxy lantai">Epoxy lantai</option>
+                    <option value="Epoxy pabrik">Epoxy pabrik</option>
+                    <option value="Epoxy gudang">Epoxy gudang</option>
+                    <option value="Epoxy kantor">Epoxy kantor</option>
+                    <option value="Self leveling">Self leveling</option>
+                    <option value="Konsultasi proyek">Konsultasi proyek</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="catatanProyek">Catatan Tambahan</label>
+                <textarea id="catatanProyek" rows="4" placeholder="Tuliskan kebutuhan proyek Anda"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold">
+                KIRIM PEMESANAN MELALUI WHATSAPP
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="contact-section" id="kontak">
+    <div class="container">
+        <div class="section-title">
+            <span>HUBUNGI KAMI</span>
+            <h2>Kontak RADHIKA JAYA PRATAMA</h2>
+            <p>Konsultasikan kebutuhan epoxy lantai Anda.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Informasi Perusahaan</h3>
+                <p><strong>Nama:</strong> RADHIKA JAYA PRATAMA</p>
+                <p><strong>Alamat:</strong> Jln. Bendungan Manganti, Dusun Karangsari RT 002/002, Desa Bojongsari, Kecamatan Kedungreja, Kabupaten Cilacap, Jawa Tengah 53263.</p>
+                <p><strong>Email:</strong> radhikajayapratamaepoxy@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <h3>Hubungi Tim Kami</h3>
+                <p><strong>Supriyadi:</strong> 082120109753</p>
+                <p><strong>Rohiman:</strong> 081372338336</p>
+                <br>
+                <a class="btn btn-gold" id="konsultasiWhatsApp" href="https://wa.me/6282120109753">
+                    CHAT WHATSAPP
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    © <span id="currentYear"></span> RADHIKA JAYA PRATAMA.
+    Jasa Epoxy Lantai Profesional.
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/6281372338336" target="_blank" rel="noopener">
+    WhatsApp
+</a>
+
+<script>
+(function () {
+    "use strict";
+
+    const NOMOR_WA = "6281372338336";
+
+    const HARGA = {
+        "350": 95000,
+        "500": 130000,
+        "1000": 160000,
+        "1500": 180000,
+        "2000": 200000,
+        "self-leveling": 145000
+    };
+
+    function rupiah(nilai) {
+        return new Intl.NumberFormat("id-ID", {
+            style: "currency",
+            currency: "IDR",
+            maximumFractionDigits: 0
+        }).format(nilai);
+    }
+
+    function kirimWhatsApp(pesan) {
+        const alamat =
+            "https://wa.me/" + NOMOR_WA +
+            "?text=" + encodeURIComponent(pesan);
+
+        window.open(alamat, "_blank", "noopener,noreferrer");
+    }
+
+    /* MENU MOBILE */
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+            });
+        });
+    }
+
+    /* TAHUN FOOTER */
+    const tahun = document.getElementById("currentYear");
+    if (tahun) {
+        tahun.textContent = new Date().getFullYear();
+    }
+
+    /* KALKULATOR */
+    const inputLuas = document.getElementById("luasArea");
+    const inputKetebalan = document.getElementById("ketebalanEpoxy");
+    const tombolHitung = document.getElementById("hitungHarga");
+    const hasilHarga = document.getElementById("hasilHarga");
+    const detailHarga = document.getElementById("detailHarga");
+    const catatanHarga = document.getElementById("catatanHarga");
+
+    function hitungEpoxy() {
+        const luas = Number(inputLuas.value);
+        const ketebalan = inputKetebalan.value;
+        const hargaPerMeter = HARGA[ketebalan];
+
+        if (inputLuas.value.trim() === "" ||
+            !Number.isFinite(luas) || luas <= 0) {
+            hasilHarga.textContent = "Rp0";
+            detailHarga.textContent = "Masukkan luas area yang benar.";
+            catatanHarga.textContent = "";
+            return;
+        }
+
+        if (!hargaPerMeter) {
+            hasilHarga.textContent = "Rp0";
+            detailHarga.textContent = "Pilih ketebalan epoxy.";
+            catatanHarga.textContent = "";
+            return;
+        }
+
+        const total = luas * hargaPerMeter;
+
+        hasilHarga.textContent = rupiah(total);
+        detailHarga.textContent =
+            luas + " m² × " + rupiah(hargaPerMeter) + " per m²";
+
+        catatanHarga.textContent =
+            "Estimasi awal. Harga akhir menyesuaikan kondisi lantai dan lokasi proyek.";
+    }
+
+    if (inputLuas && inputKetebalan && tombolHitung &&
+        hasilHarga && detailHarga && catatanHarga) {
+
+        inputLuas.addEventListener("input", hitungEpoxy);
+        inputKetebalan.addEventListener("change", hitungEpoxy);
+        tombolHitung.addEventListener("click", hitungEpoxy);
+
+        hitungEpoxy();
+
+    } else {
+        console.error("Elemen kalkulator tidak ditemukan. Periksa HTML.");
+    }
+
+    /* TOMBOL KONSULTASI */
+    const konsultasi = document.getElementById("konsultasiWhatsApp");
+
+    if (konsultasi) {
+        konsultasi.addEventListener("click", function (event) {
+            event.preventDefault();
+            kirimWhatsApp(
+                "Halo RADHIKA JAYA PRATAMA, saya ingin konsultasi jasa epoxy lantai."
+            );
+        });
+    }
+
+    /* TOMBOL PESAN DARI DAFTAR HARGA */
+    document.querySelectorAll("[data-ketebalan]").forEach(function (tombol) {
+        tombol.addEventListener("click", function () {
+            const pilihan = tombol.getAttribute("data-ketebalan");
+            const harga = HARGA[pilihan];
+
+            if (!harga) return;
+
+            kirimWhatsApp(
+                "Halo RADHIKA JAYA PRATAMA. Saya tertarik dengan epoxy " +
+                pilihan + " dengan harga estimasi " +
+                rupiah(harga) + " per m². Mohon informasi lebih lanjut."
+            );
+        });
+    });
+
+    /* FORMULIR PEMESANAN */
+    const form = document.getElementById("formPemesanan");
+
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const nama = document.getElementById("namaPelanggan").value.trim();
+            const nomor = document.getElementById("nomorPelanggan").value.trim();
+            const lokasi = document.getElementById("lokasiProyek").value.trim();
+            const luas = Number(document.getElementById("luasPemesanan").value);
+            const ketebalan = document.getElementById("ketebalanPemesanan").value;
+            const jenis = document.getElementById("jenisPekerjaan").value;
+            const catatan = document.getElementById("catatanProyek").value.trim();
+
+            if (!nama || !nomor || !lokasi ||
+                !Number.isFinite(luas) || luas <= 0 ||
+                !HARGA[ketebalan]) {
+                alert("Mohon lengkapi data pemesanan dengan benar.");
+                return;
+            }
+
+            const hargaPerMeter = HARGA[ketebalan];
+            const total = luas * hargaPerMeter;
+
+            const pesan = [
+                "HALO RADHIKA JAYA PRATAMA",
+                "",
+                "Saya ingin melakukan pemesanan jasa epoxy lantai.",
+                "",
+                "DATA PELANGGAN",
+                "Nama: " + nama,
+                "Nomor HP: " + nomor,
+                "",
+                "DATA PROYEK",
+                "Lokasi: " + lokasi,
+                "Luas: " + luas + " m²",
+                "Ketebalan: " + ketebalan,
+                "Jenis pekerjaan: " + jenis,
+                "",
+                "ESTIMASI BIAYA",
+                "Harga per m²: " + rupiah(hargaPerMeter),
+                "Total: " + rupiah(total),
+                "",
+                "CATATAN: " + (catatan || "-"),
+                "",
+                "Mohon informasi lebih lanjut. Terima kasih."
+            ].join("\n");
+
+            kirimWhatsApp(pesan);
+        });
+    }
+
+    console.log("RADHIKA JAYA PRATAMA: Website berhasil dijalankan.");
+})();
+</script>
+
+</body>
+</html>
